@@ -40,17 +40,25 @@
   <script src="/_assets/scripts/index.min.js" defer></script>
 </head>
 
-<body>
+<body data-css-theme="winter">
   <div class="wrapper">
     <header class="header" data-css-theme="winter">
       <div class="header__banner">
         <img class="header__logo" src="/_assets/images/logo-max-power-ice.svg" alt="MaxPowerIse logo" title="MaxPowerIse">
         <div class="header__line"></div>
+        <button class="header__burger">
+          <span class="header__burger-text">Меню</span>
+          <span class="header__burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
       </div>
     </header>
 
     <nav class="navbar">
-      <div class="navbar__menu">
+      <div class="navbar__menu is-hide">
         <div class="navbar__menu-body">
           <ul class="navbar__menu-list">
             <li><a class="navbar__menu-link" href="/">Главная</a></li>
@@ -66,7 +74,7 @@
     <main class="main">
       <section class="section section-media">
         <h1 class="title text-color-white">Медиа</h1>
-        <ul class="section-media__list">
+        <ul class="section-media__grid">
           <li class="section-media__card card-media">
             <img class="card-media__image" src="/media/album_name/image.jpg" alt="" aria-hidden="true">
             <a class="card-media__body" href="/media/album_name">
