@@ -61,8 +61,8 @@
         <div class="navbar__menu-body">
           <ul class="navbar__menu-list">
             <li><a class="navbar__menu-link is-current" href="/">Главная</a></li>
-            <li><a class="navbar__menu-link" href="/#section-about">О чемпионате</a></li>
-            <li><a class="navbar__menu-link" href="/#section-clasess-and-prize">Классы и призы</a></li>
+            <li><a class="navbar__menu-link" href="/#block-about">О чемпионате</a></li>
+            <li><a class="navbar__menu-link" href="/#block-prize">Классы и призы</a></li>
             <li><a class="navbar__menu-link" href="/results">Результаты</a></li>
             <li><a class="navbar__menu-link" href="/media">Медиа</a></li>
           </ul>
@@ -71,6 +71,41 @@
     </nav>
 
     <main class="main">
+      <div class="seasons" data-css-theme="winter">
+        <div class="seasons__info">
+          <h1 class="seasons__info-name">Сезон 18</h1>
+          <p class="seasons__info-year">2024</p>
+          <img class="seasons__info-decor" src="/_assets/images/decor-tyretrack.svg" alt="">
+          <a class="seasons__info-button button" href="#">Telegram-чат</a>
+        </div>
+        <ul class="seasons__list">
+          <li class="seasons__list-item">
+            <p class="seasons__list-day text-stroke">16</p>
+            <p class="seasons__list-month">Мая</p>
+            <p class="seasons__list-name">Smolensk<br> ring</p>
+            <a class="seasons__list-button button" href="#">Подробнее</a>
+          </li>
+          <li class="seasons__list-item">
+            <p class="seasons__list-day text-stroke">8</p>
+            <p class="seasons__list-month">Июня</p>
+            <p class="seasons__list-name">Moscow<br> raceway</p>
+            <a class="seasons__list-button button" href="#">Подробнее</a>
+          </li>
+          <li class="seasons__list-item">
+            <p class="seasons__list-day text-stroke">30</p>
+            <p class="seasons__list-month">Июня</p>
+            <p class="seasons__list-name">Kazan<br> ring</p>
+            <a class="seasons__list-button button" href="#">Подробнее</a>
+          </li>
+          <li class="seasons__list-item is-current">
+            <p class="seasons__list-day text-stroke">10</p>
+            <p class="seasons__list-month">Июля</p>
+            <p class="seasons__list-name">Igora<br> drive</p>
+            <a class="seasons__list-button button" href="#">Подробнее</a>
+          </li>
+        </ul>
+      </div>
+
       <div class="stage" data-css-theme="winter">
         <div class="stage__track">
           <img class="stage__image" src="/_assets/images/tracks/track-1.png" alt="">
@@ -99,10 +134,78 @@
             </ul>
           </div>
           <div class="stage__foot">
-            <span class="stage__label">Даты могут быть изменены</span>
+            <a class="stage__button button button_green" href="#">Регистрация</a>
+            <a class="stage__button button button_white" href="#">Расписание</a>
+            <a class="stage__button button button_white" href="/results/stage_name">Результаты</a>
+            <a class="stage__button button button_white" href="/media/album_name">Фотографии</a>
           </div>
         </div>
       </div>
+
+      <sction class="section section-info">
+        <div class="about" id="block-about">
+          <h2 class="title">О чемпионате</h2>
+          <div class="about__descr">
+            <p><strong>MaxPowerIce</strong> - серия зимних гоночных соревнований по дисциплине “Ралли-спринт”. Победителем становится участник, показавший лучшее время прохождения круга на специальных соревновательных участках.</p>
+            <p>В 2024-ом году чемпионат проводится без сквозного (сезонного) зачета. Призовой фонд разыгрывается в личном зачете в трех гоночных классах на каждом соревновательном этапе серии.</p>
+          </div>
+          <div class="about__cards">
+            <div class="card-about">
+              <div class="card-about__head">
+                <svg viewBox="0 0 24 24">
+                  <use href="/_assets/icons/sprite.svg#icon-docs"></use>
+                </svg>
+              </div>
+              <h3 class="card-about__title">Регламент</h3>
+              <p class="card-about__text">Ознакомьтесь с правилами безопасности и регламентом соревнования</p>
+              <a class="card-about__button button button_blue" href="#">Открыть</a>
+            </div>
+            <div class="card-about">
+              <div class="card-about__head">
+                <svg viewBox="0 0 24 24">
+                  <use href="/_assets/icons/sprite.svg#icon-mone"></use>
+                </svg>
+              </div>
+              <h3 class="card-about__title">Стоимость участия</h3>
+              <p class="card-about__text">Ознакомьтесь со стоимостью участия в зачетных классах чемпионата</p>
+              <a class="card-about__button button button_blue" href="#">Открыть</a>
+            </div>
+          </div>
+        </div>
+        <div class="prize" id="block-prize">
+          <h2 class="title">Классы и призовые</h2>
+          <div class="prize__body">
+            <div class="prize__buttons">
+              <button class="prize__button is-current">Полный привод (AWD)</button>
+              <button class="prize__button">Передний привод (FWD)</button>
+              <button class="prize__button">Задний привод (RWD)</button>
+            </div>
+            <div class="prize__content">
+              <div class="prize__cards">
+                <div class="card-prize">
+                  <p class="card-prize__value">25 000 ₽</p>
+                  <hr class="card-prize__divider">
+                  <p class="card-prize__label">за 1-ое место</p>
+                </div>
+                <div class="card-prize">
+                  <p class="card-prize__value">10 000 ₽</p>
+                  <hr class="card-prize__divider">
+                  <p class="card-prize__label">за 2-ое место</p>
+                </div>
+                <div class="card-prize">
+                  <p class="card-prize__value">5 000 ₽</p>
+                  <hr class="card-prize__divider">
+                  <p class="card-prize__label">за 3-е место</p>
+                </div>
+              </div>
+              <p class="prize__text">
+                Призовой фонд остается одинаковым и вручается призерам классов на каждом мероприятии зимней серии MaxPowerIce. Награда вручается в виде сертификата и должна быть получена непосредственно участником соревнования. В случае
+                отсутствия победителя/призера на церемонии награждения, призовой фонд не выдается. При этом участник сохраняет право на получение сувенирной наградной атрибутики.
+              </p>
+            </div>
+          </div>
+        </div>
+      </sction>
 
       <div class="banner">
         <img class=" banner__image" src="/_assets/images/bg-banner-sammer.jpg" alt="">
