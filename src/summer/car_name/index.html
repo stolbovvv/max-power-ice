@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <!-- Basic page options -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="width">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- Basic page information -->
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <title>Название машыны – MaxPowerCars</title>
+
+  <!-- Connecting page favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Connecting libs styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css">
+
+  <!-- Connecting page styles -->
+  <link rel="stylesheet" href="/_assets/styles/fonts.min.css">
+  <link rel="stylesheet" href="/_assets/styles/reset.min.css">
+  <link rel="stylesheet" href="/_assets/styles/index.min.css">
+
+  <!-- Connecting libs scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+  <!-- Connecting page scripts -->
+  <script src="/_assets/scripts/index.min.js" defer></script>
+</head>
+
+<body data-css-theme="summer">
+  <div class="wrapper">
+    <header class="header" data-css-theme="summer">
+      <div class="header__banner">
+        <img class="header__logo" src="/_assets/images/logo-max-power-cars.svg" alt="MaxPowerCars logo" title="MaxPowerCars">
+        <div class="header__line"></div>
+        <button class="header__burger" id="js-menu-trigger">
+          <span class="header__burger-text">Меню</span>
+          <span class="header__burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="navbar" data-css-theme="summer">
+      <div class="navbar__menu is-hide">
+        <div class="navbar__menu-body">
+          <ul class="navbar__menu-list">
+            <li>
+              <a class="navbar__menu-link" href="/summer#section-navigator">
+                <svg class="icon-triangle" viewBox="0 0 24 24">
+                  <use href="/_assets/icons/sprite.svg#icon-triangle"></use>
+                </svg>
+                <span>Вернуться к классам</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <section class="section section-navigator">
+        <h2 class="title">Навигатор по классам</h2>
+        <div class="navigator-info">
+          <div class="navigator-info__text">
+            <p>
+              Навигатор по классам является основным инструментом для конкурентного распределения участников по зачетным группам и помогает участникам ознакомиться с разрешенными доработками конкретных моделей автомобилей. Расчетные данные
+              формируются исходя из опыта организаторов, потенциала автомобилей и результатов выступлений пилотов чемпионата.
+            </p>
+          </div>
+          <div class="navigator-info__banner card-banner">
+            <img class="card-banner__img" src="/_assets/images/bg-banner-navigator.jpg" alt="">
+            <div class="card-banner__body">
+              <p class="card-banner__title">Нет вашего автомобиля?</p>
+              <a class="card-banner__link" href="#">Напишите организаторам в телеграм для предварительного определения класса</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-navigator__body">
+          <div class="section-navigator__content">
+            <div class="car-info">
+              <div class="car-info__card card-car">
+                <p class="card-car__name">GT1 PRO</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-2.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M4 C/CS F82</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_black" href="#">Распечатать карточку</a>
+                </div>
+              </div>
+
+              <div class="car-info__data">
+                <h2 class="title text-color-white">Разрешенные доработки и ограничения</h2>
+
+                <h3 class="car-info__data-subtitle">Экстерьер:</h3>
+                <ul class="car-info__data-list">
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Навесные элементы кузова:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Двери:</span>
+                    <span class="car-info__data-list-value text-color-red">Только при наличии каркаса</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Спойлер:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Аэропакет/аэрокит:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                </ul>
+
+                <h3 class="car-info__data-subtitle">Интерьер:</h3>
+                <ul class="car-info__data-list">
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Сиденья:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Каркас/ролл-бар:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Обшивка салона:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                </ul>
+
+                <h3 class="car-info__data-subtitle">Подвеска:</h3>
+                <ul class="car-info__data-list">
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Амортизаторы:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Пружины:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Опоры:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Распорки:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Стабилизаторы:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Рычаги/тяги (передняя ось):</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Рычаги/тяги (задняя ось):</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                </ul>
+
+                <h3 class="car-info__data-subtitle">Колеса/шины:</h3>
+                <ul class="car-info__data-list">
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Колесные диски:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Проставки (передняя ось):</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Проставки (задняя ось):</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Ширина шин (передняя ось):</span>
+                    <span class="car-info__data-list-value text-color-red">Max. 295</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Ширина шин (задняя ось):</span>
+                    <span class="car-info__data-list-value text-color-red">Max. 305</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Модели шин Michelin:</span>
+                    <span class="car-info__data-list-value">PSS, PS 4S, PS Cup 2</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Модели шин Yokohama:</span>
+                    <span class="car-info__data-list-value">AD08, AD09, AD052</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Модели шин Nankang:</span>
+                    <span class="car-info__data-list-value">AR-1, NS-2R, CR-S</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Модели шин Pirelli:</span>
+                    <span class="car-info__data-list-value">P-Zero, P-Zero Trofeo R, P-Zero Corsa</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Модели шин Hanckook:</span>
+                    <span class="car-info__data-list-value">Ventus RS-3, Ventus RS-4</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Модели шин Toyo:</span>
+                    <span class="car-info__data-list-value">Proxes R888R</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Модели шин Goodyear:</span>
+                    <span class="car-info__data-list-value">Eagle F1 SS, Eagle F1 SS R</span>
+                  </li>
+                </ul>
+
+                <h3 class="car-info__data-subtitle">Тормозная система:</h3>
+                <ul class="car-info__data-list">
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Суппорты:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Тормозные диски:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                </ul>
+
+                <h3 class="car-info__data-subtitle">Двигатель:</h3>
+                <ul class="car-info__data-list">
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Двигатель/блок цилиндров:</span>
+                    <span class="car-info__data-list-value text-color-red">Заводское исполнение (сток)</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">ГБЦ:</span>
+                    <span class="car-info__data-list-value text-color-red">Заводское исполнение (сток)</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Турбина:</span>
+                    <span class="car-info__data-list-value text-color-red">Заводское исполнение (сток)</span>
+                  </li>
+                </ul>
+
+                <h3 class="car-info__data-subtitle">Впускная система:</h3>
+                <ul class="car-info__data-list">
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Впускной коллектор:</span>
+                    <span class="car-info__data-list-value text-color-red">Заводское исполнение (сток)</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Интеркулер:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                </ul>
+
+                <h3 class="car-info__data-subtitle">Выпускная система:</h3>
+                <ul class="car-info__data-list">
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Выпускной коллектор:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Приемная труба:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Катализаторы:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Средняя часть / резонатор</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Глушитель/банка</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                </ul>
+
+                <h3 class="car-info__data-subtitle">Топливная система:</h3>
+                <ul class="car-info__data-list">
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Топливный бак:</span>
+                    <span class="car-info__data-list-value text-color-green">Доработка/замена разрешена</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Топливо:</span>
+                    <span class="car-info__data-list-value text-color-red">Max. АИ-100</span>
+                  </li>
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">Система впрыска метанола:</span>
+                    <span class="car-info__data-list-value text-color-red">Запрещена</span>
+                  </li>
+                </ul>
+
+                <h3 class="car-info__data-subtitle">Трансмиссия:</h3>
+                <ul class="car-info__data-list">
+                  <li class="car-info__data-list-item">
+                    <span class="car-info__data-list-label">КПП:</span>
+                    <span class="car-info__data-list-value text-color-red">Заводское исполнение (сток)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__summary">
+        <p>MaxPowerCars - российский любительский автоспортивный чемпионат по дисциплине “Time Attack”. Основан в 2006 году Максимом Травиным - одним из основоположнников любительского автоспорта в России.</p>
+        <p>C 2022 года чемпионат проводится под оперативным управлением ООО “МаксПауэрКарс”, при непосредственном участии и наблюдении членов семьи М. Травина.</p>
+      </div>
+      <div class="footer__contact">
+        <ul class="list-social">
+          <li>
+            <a class="list-social__link" data-css-theme="summer" href="">
+              <svg viewBox="0 0 30 30">
+                <use href="/_assets/icons/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="list-social__link" data-css-theme="summer" href="">
+              <svg viewBox="0 0 30 30">
+                <use href="/_assets/icons/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="list-social__link" data-css-theme="summer" href="">
+              <svg viewBox="0 0 30 30">
+                <use href="/_assets/icons/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="list-social__link" data-css-theme="summer" href="">
+              <svg viewBox="0 0 30 30">
+                <use href="/_assets/icons/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-contact">
+          <li><a class="list-contact__link" href="mailto:info@maxpowercars.ru">info@maxpowercars.ru</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

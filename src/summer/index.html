@@ -45,7 +45,7 @@
       <div class="header__banner">
         <img class="header__logo" src="/_assets/images/logo-max-power-cars.svg" alt="MaxPowerCars logo" title="MaxPowerCars">
         <div class="header__line"></div>
-        <button class="header__burger">
+        <button class="header__burger" id="js-menu-trigger">
           <span class="header__burger-text">Меню</span>
           <span class="header__burger-icon">
             <span></span>
@@ -74,76 +74,225 @@
     </nav>
 
     <main class="main">
-      <div class="seasons" data-css-theme="summer">
-        <div class="seasons__info">
-          <h1 class="seasons__info-name">Сезон 18</h1>
-          <p class="seasons__info-year">2024</p>
-          <img class="seasons__info-decor" src="/_assets/images/decor-tyretrack.svg" alt="">
-          <a class="seasons__info-button button" href="#">Telegram-чат</a>
+      <div class="js-tabs">
+        <div class="seasons" data-css-theme="summer">
+          <div class="seasons__info">
+            <h1 class="seasons__info-name">Сезон 18</h1>
+            <p class="seasons__info-year">2024</p>
+            <img class="seasons__info-decor" src="/_assets/images/decor-tyretrack.svg" alt="">
+            <a class="seasons__info-button button" href="#">Telegram-чат</a>
+          </div>
+          <ul class="seasons__list">
+            <li class="seasons__list-item js-tabs-trigger" data-tab-id="1">
+              <p class="seasons__list-day text-stroke">16</p>
+              <p class="seasons__list-month">Мая</p>
+              <p class="seasons__list-name">Smolensk<br> ring</p>
+              <a class="seasons__list-button button" href="#">Подробнее</a>
+            </li>
+            <li class="seasons__list-item js-tabs-trigger" data-tab-id="2">
+              <p class="seasons__list-day text-stroke">8</p>
+              <p class="seasons__list-month">Июня</p>
+              <p class="seasons__list-name">Moscow<br> raceway</p>
+              <a class="seasons__list-button button" href="#">Подробнее</a>
+            </li>
+            <li class="seasons__list-item js-tabs-trigger" data-tab-id="3">
+              <p class="seasons__list-day text-stroke">30</p>
+              <p class="seasons__list-month">Июня</p>
+              <p class="seasons__list-name">Kazan<br> ring</p>
+              <a class="seasons__list-button button" href="#">Подробнее</a>
+            </li>
+            <li class="seasons__list-item js-tabs-trigger" data-tab-id="4">
+              <p class="seasons__list-day text-stroke">10</p>
+              <p class="seasons__list-month">Июля</p>
+              <p class="seasons__list-name">Igora<br> drive</p>
+              <a class="seasons__list-button button" href="#">Подробнее</a>
+            </li>
+            <li class="seasons__list-item js-tabs-trigger" data-tab-id="5">
+              <p class="seasons__list-day text-stroke">5</p>
+              <p class="seasons__list-month">Августа</p>
+              <p class="seasons__list-name">Moscow<br> raceway</p>
+              <a class="seasons__list-button button" href="#">Подробнее</a>
+            </li>
+          </ul>
         </div>
-        <ul class="seasons__list">
-          <li class="seasons__list-item">
-            <p class="seasons__list-day text-stroke">16</p>
-            <p class="seasons__list-month">Мая</p>
-            <p class="seasons__list-name">Smolensk<br> ring</p>
-            <a class="seasons__list-button button" href="#">Подробнее</a>
-          </li>
-          <li class="seasons__list-item">
-            <p class="seasons__list-day text-stroke">8</p>
-            <p class="seasons__list-month">Июня</p>
-            <p class="seasons__list-name">Moscow<br> raceway</p>
-            <a class="seasons__list-button button" href="#">Подробнее</a>
-          </li>
-          <li class="seasons__list-item">
-            <p class="seasons__list-day text-stroke">30</p>
-            <p class="seasons__list-month">Июня</p>
-            <p class="seasons__list-name">Kazan<br> ring</p>
-            <a class="seasons__list-button button" href="#">Подробнее</a>
-          </li>
-          <li class="seasons__list-item is-current">
-            <p class="seasons__list-day text-stroke">10</p>
-            <p class="seasons__list-month">Июля</p>
-            <p class="seasons__list-name">Igora<br> drive</p>
-            <a class="seasons__list-button button" href="#">Подробнее</a>
-          </li>
-          <li class="seasons__list-item">
-            <p class="seasons__list-day text-stroke">5</p>
-            <p class="seasons__list-month">Августа</p>
-            <p class="seasons__list-name">Moscow<br> raceway</p>
-            <a class="seasons__list-button button" href="#">Подробнее</a>
-          </li>
-        </ul>
-      </div>
 
-      <div class="stage" data-css-theme="summer">
-        <div class="stage__track">
-          <img class="stage__image" src="/_assets/images/tracks/track-1.png" alt="">
-          <span class="stage__config">Конфигурация: F1</span>
+        <div class="stage js-tabs-content" data-tab-id="1" data-css-theme="summer">
+          <div class="stage__track">
+            <img class="stage__image" src="/_assets/images/tracks/track-1.png" alt="">
+            <span class="stage__config">Конфигурация: F1</span>
+          </div>
+          <div class="stage__content">
+            <div class="stage__head">
+              <h2 class="stage__name">Smolensk ring</h2>
+              <p class="stage__data">16.05</p>
+            </div>
+            <div class="stage__body">
+              <p class="stage__address">Ленинградская область, Приозёрское ш., 3, корп. 5, д. Новожилово </p>
+              <ul class="stage__props">
+                <li class="stage__props-item">
+                  <span class="stage__props-value">4 153</span>
+                  <span class="stage__props-label">Длина трассы</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">26</span>
+                  <span class="stage__props-label">Поворотов</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">01:56,555</span>
+                  <span class="stage__props-label">Рекорд MPC Best Laps</span>
+                </li>
+              </ul>
+            </div>
+            <div class="stage__foot">
+              <a class="stage__button button button_green" href="#">Регистрация</a>
+              <a class="stage__button button button_white" href="#">Расписание</a>
+              <a class="stage__button button button_white" href="/results/stage_name">Результаты</a>
+              <a class="stage__button button button_white" href="/media/album_name">Фотографии</a>
+            </div>
+          </div>
         </div>
-        <div class="stage__content">
-          <div class="stage__head">
-            <h2 class="stage__name">Igora drive</h2>
-            <p class="stage__data">10.06</p>
+
+        <div class="stage js-tabs-content" data-tab-id="2" data-css-theme="summer">
+          <div class="stage__track">
+            <img class="stage__image" src="/_assets/images/tracks/track-1.png" alt="">
+            <span class="stage__config">Конфигурация: F1</span>
           </div>
-          <div class="stage__body">
-            <p class="stage__address">Ленинградская область, Приозёрское ш., 3, корп. 5, д. Новожилово </p>
-            <ul class="stage__props">
-              <li class="stage__props-item">
-                <span class="stage__props-value">4 153</span>
-                <span class="stage__props-label">Длина трассы</span>
-              </li>
-              <li class="stage__props-item">
-                <span class="stage__props-value">26</span>
-                <span class="stage__props-label">Поворотов</span>
-              </li>
-              <li class="stage__props-item">
-                <span class="stage__props-value">01:56,555</span>
-                <span class="stage__props-label">Рекорд MPC Best Laps</span>
-              </li>
-            </ul>
+          <div class="stage__content">
+            <div class="stage__head">
+              <h2 class="stage__name">Moscow raceway</h2>
+              <p class="stage__data">8.06</p>
+            </div>
+            <div class="stage__body">
+              <p class="stage__address">Ленинградская область, Приозёрское ш., 3, корп. 5, д. Новожилово </p>
+              <ul class="stage__props">
+                <li class="stage__props-item">
+                  <span class="stage__props-value">4 153</span>
+                  <span class="stage__props-label">Длина трассы</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">26</span>
+                  <span class="stage__props-label">Поворотов</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">01:56,555</span>
+                  <span class="stage__props-label">Рекорд MPC Best Laps</span>
+                </li>
+              </ul>
+            </div>
+            <div class="stage__foot">
+              <a class="stage__button button button_green" href="#">Регистрация</a>
+              <a class="stage__button button button_white" href="#">Расписание</a>
+              <a class="stage__button button button_white" href="/results/stage_name">Результаты</a>
+              <a class="stage__button button button_white" href="/media/album_name">Фотографии</a>
+            </div>
           </div>
-          <div class="stage__foot">
-            <span class="stage__label">Даты могут быть изменены</span>
+        </div>
+
+        <div class="stage js-tabs-content" data-tab-id="3" data-css-theme="summer">
+          <div class="stage__track">
+            <img class="stage__image" src="/_assets/images/tracks/track-1.png" alt="">
+            <span class="stage__config">Конфигурация: F1</span>
+          </div>
+          <div class="stage__content">
+            <div class="stage__head">
+              <h2 class="stage__name">Kazan ring</h2>
+              <p class="stage__data">30.06</p>
+            </div>
+            <div class="stage__body">
+              <p class="stage__address">Ленинградская область, Приозёрское ш., 3, корп. 5, д. Новожилово </p>
+              <ul class="stage__props">
+                <li class="stage__props-item">
+                  <span class="stage__props-value">4 153</span>
+                  <span class="stage__props-label">Длина трассы</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">26</span>
+                  <span class="stage__props-label">Поворотов</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">01:56,555</span>
+                  <span class="stage__props-label">Рекорд MPC Best Laps</span>
+                </li>
+              </ul>
+            </div>
+            <div class="stage__foot">
+              <a class="stage__button button button_green" href="#">Регистрация</a>
+              <a class="stage__button button button_white" href="#">Расписание</a>
+              <a class="stage__button button button_white" href="/results/stage_name">Результаты</a>
+              <a class="stage__button button button_white" href="/media/album_name">Фотографии</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage js-tabs-content" data-tab-id="4" data-css-theme="summer">
+          <div class="stage__track">
+            <img class="stage__image" src="/_assets/images/tracks/track-1.png" alt="">
+            <span class="stage__config">Конфигурация: F1</span>
+          </div>
+          <div class="stage__content">
+            <div class="stage__head">
+              <h2 class="stage__name">Igora drive</h2>
+              <p class="stage__data">10.07</p>
+            </div>
+            <div class="stage__body">
+              <p class="stage__address">Ленинградская область, Приозёрское ш., 3, корп. 5, д. Новожилово </p>
+              <ul class="stage__props">
+                <li class="stage__props-item">
+                  <span class="stage__props-value">4 153</span>
+                  <span class="stage__props-label">Длина трассы</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">26</span>
+                  <span class="stage__props-label">Поворотов</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">01:56,555</span>
+                  <span class="stage__props-label">Рекорд MPC Best Laps</span>
+                </li>
+              </ul>
+            </div>
+            <div class="stage__foot">
+              <a class="stage__button button button_green" href="#">Регистрация</a>
+              <a class="stage__button button button_white" href="#">Расписание</a>
+              <a class="stage__button button button_white" href="/results/stage_name">Результаты</a>
+              <a class="stage__button button button_white" href="/media/album_name">Фотографии</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage js-tabs-content" data-tab-id="5" data-css-theme="summer">
+          <div class="stage__track">
+            <img class="stage__image" src="/_assets/images/tracks/track-1.png" alt="">
+            <span class="stage__config">Конфигурация: F1</span>
+          </div>
+          <div class="stage__content">
+            <div class="stage__head">
+              <h2 class="stage__name">Moscow raceway</h2>
+              <p class="stage__data">5.08</p>
+            </div>
+            <div class="stage__body">
+              <p class="stage__address">Ленинградская область, Приозёрское ш., 3, корп. 5, д. Новожилово </p>
+              <ul class="stage__props">
+                <li class="stage__props-item">
+                  <span class="stage__props-value">4 153</span>
+                  <span class="stage__props-label">Длина трассы</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">26</span>
+                  <span class="stage__props-label">Поворотов</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">01:56,555</span>
+                  <span class="stage__props-label">Рекорд MPC Best Laps</span>
+                </li>
+              </ul>
+            </div>
+            <div class="stage__foot">
+              <a class="stage__button button button_green" href="#">Регистрация</a>
+              <a class="stage__button button button_white" href="#">Расписание</a>
+              <a class="stage__button button button_white" href="/results/stage_name">Результаты</a>
+              <a class="stage__button button button_white" href="/media/album_name">Фотографии</a>
+            </div>
           </div>
         </div>
       </div>
@@ -193,7 +342,7 @@
         </div>
       </section>
 
-      <section class="section section-navigator">
+      <section class="section section-navigator" id="section-navigator">
         <h2 class="title">Навигатор по классам</h2>
         <div class="navigator-info">
           <div class="navigator-info__text">
@@ -211,62 +360,70 @@
           </div>
         </div>
 
-        <div class="section-navigator__body">
+        <div class="section-navigator__body js-tabs">
           <aside class="section-navigator__sidebar sidebar">
             <div class="tabs">
               <h3 class="label">Зачетные классы:</h3>
               <ul class="tabs__list">
+                <!-- UNLIMITED -->
                 <li>
-                  <button class="tabs__button is-current">
+                  <button class="tabs__button js-tabs-trigger" data-tab-id="UNLIMITED">
                     <span>UNLIMITED</span>
                     <svg class="icon">
                       <use href="/_assets/icons/sprite.svg#icon-triangle"></use>
                     </svg></button>
                 </li>
+                <!-- SUPERCARS -->
                 <li>
-                  <button class="tabs__button">
+                  <button class="tabs__button js-tabs-trigger" data-tab-id="SUPERCARS">
                     <span>SUPERCARS</span>
                     <svg class="icon">
                       <use href="/_assets/icons/sprite.svg#icon-triangle"></use>
                     </svg></button>
                 </li>
+                <!-- GT1 PRO -->
                 <li>
-                  <button class="tabs__button">
+                  <button class="tabs__button js-tabs-trigger" data-tab-id="GT1 PRO">
                     <span>GT1 PRO</span>
                     <svg class="icon">
                       <use href="/_assets/icons/sprite.svg#icon-triangle"></use>
                     </svg></button>
                 </li>
+                <!-- GT2 PRO -->
                 <li>
-                  <button class="tabs__button">
+                  <button class="tabs__button js-tabs-trigger" data-tab-id="GT2 PRO">
                     <span>GT2 PRO</span>
                     <svg class="icon">
                       <use href="/_assets/icons/sprite.svg#icon-triangle"></use>
                     </svg></button>
                 </li>
+                <!-- GT3 PRO -->
                 <li>
-                  <button class="tabs__button">
+                  <button class="tabs__button js-tabs-trigger" data-tab-id="GT3 PRO">
                     <span>GT3 PRO</span>
                     <svg class="icon">
                       <use href="/_assets/icons/sprite.svg#icon-triangle"></use>
                     </svg></button>
                 </li>
+                <!-- TURBOSTOCK -->
                 <li>
-                  <button class="tabs__button">
+                  <button class="tabs__button js-tabs-trigger" data-tab-id="TURBOSTOCK">
                     <span>TURBOSTOCK</span>
                     <svg class="icon">
                       <use href="/_assets/icons/sprite.svg#icon-triangle"></use>
                     </svg></button>
                 </li>
+                <!-- GT4 PRO -->
                 <li>
-                  <button class="tabs__button">
+                  <button class="tabs__button js-tabs-trigger" data-tab-id="GT4 PRO">
                     <span>GT4 PRO</span>
                     <svg class="icon">
                       <use href="/_assets/icons/sprite.svg#icon-triangle"></use>
                     </svg></button>
                 </li>
+                <!-- GT5 PRO -->
                 <li>
-                  <button class="tabs__button">
+                  <button class="tabs__button js-tabs-trigger" data-tab-id="GT5 PRO">
                     <span>GT5 PRO</span>
                     <svg class="icon">
                       <use href="/_assets/icons/sprite.svg#icon-triangle"></use>
@@ -276,8 +433,170 @@
             </div>
           </aside>
           <div class="section-navigator__content">
-            <!-- 
-            <ul class="list-cars">
+            <!-- UNLIMITED -->
+            <ul class="list-cars js-tabs-content" data-tab-id="UNLIMITED">
+              <li class="card-car">
+                <p class="card-car__name">UNLIMITED</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M2 C/CS F87</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">UNLIMITED</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-2.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M4 C/CS F82</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">UNLIMITED</p>
+                <img class="card-car__image" src="/summer/images/cars/models/nissan-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/nissan.png" alt="">
+                  <p class="card-car__model">GT-R R35 (+Nismo)</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">UNLIMITED</p>
+                <img class="card-car__image" src="/summer/images/cars/models/mercedes-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/mercedes.png" alt="">
+                  <p class="card-car__model">AMG GTR C190</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">UNLIMITED</p>
+                <img class="card-car__image" src="/summer/images/cars/models/porsche-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/porsche.png" alt="">
+                  <p class="card-car__model">911 TURBO S 991.2 </p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">UNLIMITED</p>
+                <img class="card-car__image" src="/summer/images/cars/models/porsche-2.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/porsche.png" alt="">
+                  <p class="card-car__model">911 GT3 991.1</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">UNLIMITED</p>
+                <img class="card-car__image" src="/summer/images/cars/models/lamborghini-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/lamborghini.png" alt="">
+                  <p class="card-car__model">HURACAN (+STO)</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+            </ul>
+
+            <!-- SUPERCARS -->
+            <ul class="list-cars js-tabs-content" data-tab-id="SUPERCARS">
+              <li class="card-car">
+                <p class="card-car__name">SUPERCARS</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M2 C/CS F87</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">SUPERCARS</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-2.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M4 C/CS F82</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">SUPERCARS</p>
+                <img class="card-car__image" src="/summer/images/cars/models/nissan-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/nissan.png" alt="">
+                  <p class="card-car__model">GT-R R35 (+Nismo)</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">SUPERCARS</p>
+                <img class="card-car__image" src="/summer/images/cars/models/mercedes-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/mercedes.png" alt="">
+                  <p class="card-car__model">AMG GTR C190</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">SUPERCARS</p>
+                <img class="card-car__image" src="/summer/images/cars/models/porsche-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/porsche.png" alt="">
+                  <p class="card-car__model">911 TURBO S 991.2 </p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">SUPERCARS</p>
+                <img class="card-car__image" src="/summer/images/cars/models/porsche-2.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/porsche.png" alt="">
+                  <p class="card-car__model">911 GT3 991.1</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">SUPERCARS</p>
+                <img class="card-car__image" src="/summer/images/cars/models/lamborghini-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/lamborghini.png" alt="">
+                  <p class="card-car__model">HURACAN (+STO)</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+            </ul>
+
+            <!-- GT1 PRO -->
+            <ul class="list-cars js-tabs-content" data-tab-id="GT1 PRO">
               <li class="card-car">
                 <p class="card-car__name">GT1 PRO</p>
                 <img class="card-car__image" src="/summer/images/cars/models/bmw-1.png" alt="">
@@ -286,7 +605,7 @@
                   <p class="card-car__model">M2 C/CS F87</p>
                 </div>
                 <div class="card-car__foot">
-                  <a class="card-car__button button button_red" href="#">Разрешенные доработки</a>
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
                 </div>
               </li>
               <li class="card-car">
@@ -297,67 +616,142 @@
                   <p class="card-car__model">M4 C/CS F82</p>
                 </div>
                 <div class="card-car__foot">
-                  <a class="card-car__button button button_red" href="#">Разрешенные доработки</a>
-                </div>
-              </li>
-              <li class="card-car">
-                <p class="card-car__name">GT1 PRO</p>
-                <img class="card-car__image" src="/summer/images/cars/models/nissan-1.png" alt="">
-                <div class="card-car__info">
-                  <img class="card-car__icon" src="/summer/images/cars/logos/nissan.png" alt="">
-                  <p class="card-car__model">GT-R R35 (+Nismo)</p>
-                </div>
-                <div class="card-car__foot">
-                  <a class="card-car__button button button_red" href="#">Разрешенные доработки</a>
-                </div>
-              </li>
-              <li class="card-car">
-                <p class="card-car__name">GT1 PRO</p>
-                <img class="card-car__image" src="/summer/images/cars/models/mercedes-1.png" alt="">
-                <div class="card-car__info">
-                  <img class="card-car__icon" src="/summer/images/cars/logos/mercedes.png" alt="">
-                  <p class="card-car__model">AMG GTR C190</p>
-                </div>
-                <div class="card-car__foot">
-                  <a class="card-car__button button button_red" href="#">Разрешенные доработки</a>
-                </div>
-              </li>
-              <li class="card-car">
-                <p class="card-car__name">GT1 PRO</p>
-                <img class="card-car__image" src="/summer/images/cars/models/porsche-1.png" alt="">
-                <div class="card-car__info">
-                  <img class="card-car__icon" src="/summer/images/cars/logos/porsche.png" alt="">
-                  <p class="card-car__model">911 TURBO S 991.2 </p>
-                </div>
-                <div class="card-car__foot">
-                  <a class="card-car__button button button_red" href="#">Разрешенные доработки</a>
-                </div>
-              </li>
-              <li class="card-car">
-                <p class="card-car__name">GT1 PRO</p>
-                <img class="card-car__image" src="/summer/images/cars/models/porsche-2.png" alt="">
-                <div class="card-car__info">
-                  <img class="card-car__icon" src="/summer/images/cars/logos/porsche.png" alt="">
-                  <p class="card-car__model">911 GT3 991.1</p>
-                </div>
-                <div class="card-car__foot">
-                  <a class="card-car__button button button_red" href="#">Разрешенные доработки</a>
-                </div>
-              </li>
-              <li class="card-car">
-                <p class="card-car__name">GT1 PRO</p>
-                <img class="card-car__image" src="/summer/images/cars/models/lamborghini-1.png" alt="">
-                <div class="card-car__info">
-                  <img class="card-car__icon" src="/summer/images/cars/logos/lamborghini.png" alt="">
-                  <p class="card-car__model">HURACAN (+STO)</p>
-                </div>
-                <div class="card-car__foot">
-                  <a class="card-car__button button button_red" href="#">Разрешенные доработки</a>
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
                 </div>
               </li>
             </ul>
-             -->
 
+            <!-- GT2 PRO -->
+            <ul class="list-cars js-tabs-content" data-tab-id="GT2 PRO">
+              <li class="card-car">
+                <p class="card-car__name">GT2 PRO</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M2 C/CS F87</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">GT2 PRO</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-2.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M4 C/CS F82</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+            </ul>
+
+            <!-- GT3 PRO -->
+            <ul class="list-cars js-tabs-content" data-tab-id="GT3 PRO">
+              <li class="card-car">
+                <p class="card-car__name">GT3 PRO</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M2 C/CS F87</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">GT3 PRO</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-2.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M4 C/CS F82</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+            </ul>
+
+            <!-- TURBOSTOCK -->
+            <ul class="list-cars js-tabs-content" data-tab-id="TURBOSTOCK">
+              <li class="card-car">
+                <p class="card-car__name">TURBOSTOCK</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M2 C/CS F87</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">TURBOSTOCK</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-2.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M4 C/CS F82</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+            </ul>
+
+            <!-- GT4 PRO -->
+            <ul class="list-cars js-tabs-content" data-tab-id="GT4 PRO">
+              <li class="card-car">
+                <p class="card-car__name">GT4 PRO</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M2 C/CS F87</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">GT4 PRO</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-2.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M4 C/CS F82</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+            </ul>
+
+            <!-- GT5 PRO -->
+            <ul class="list-cars js-tabs-content" data-tab-id="GT5 PRO">
+              <li class="card-car">
+                <p class="card-car__name">GT5 PRO</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-1.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M2 C/CS F87</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+              <li class="card-car">
+                <p class="card-car__name">GT5 PRO</p>
+                <img class="card-car__image" src="/summer/images/cars/models/bmw-2.png" alt="">
+                <div class="card-car__info">
+                  <img class="card-car__icon" src="/summer/images/cars/logos/bmw.png" alt="">
+                  <p class="card-car__model">M4 C/CS F82</p>
+                </div>
+                <div class="card-car__foot">
+                  <a class="card-car__button button button_red" href="/summer/car_name">Разрешенные доработки</a>
+                </div>
+              </li>
+            </ul>
+
+            <!-- 
             <div class="car-info">
               <div class="car-info__card card-car">
                 <p class="card-car__name">GT1 PRO</p>
@@ -583,6 +977,7 @@
                 </ul>
               </div>
             </div>
+             -->
           </div>
         </div>
       </section>

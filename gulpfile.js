@@ -127,7 +127,9 @@ function runServer() {
   sync.init({
     server: {
       baseDir: MODE.PROD ? DIR.BUILD : [DIR.SOURCE, DIR.PUBLIC],
+      proxy: 'localhost:4321',
     },
+
     notify: false,
     open: MODE.PROD,
     port: MODE.PROD ? 8080 : 1234,

@@ -45,7 +45,7 @@
       <div class="header__banner">
         <img class="header__logo" src="/_assets/images/logo-max-power-ice.svg" alt="MaxPowerIse logo" title="MaxPowerIse">
         <div class="header__line"></div>
-        <button class="header__burger">
+        <button class="header__burger" id="js-menu-trigger">
           <span class="header__burger-text">Меню</span>
           <span class="header__burger-icon">
             <span></span>
@@ -57,7 +57,7 @@
     </header>
 
     <nav class="navbar">
-      <div class="navbar__menu is-hide">
+      <div class="navbar__menu is-hide" id="js-menu-wrapper">
         <div class="navbar__menu-body">
           <ul class="navbar__menu-list">
             <li><a class="navbar__menu-link is-current" href="/">Главная</a></li>
@@ -71,73 +71,184 @@
     </nav>
 
     <main class="main">
-      <div class="seasons" data-css-theme="winter">
-        <div class="seasons__info">
-          <h1 class="seasons__info-name">Сезон 18</h1>
-          <p class="seasons__info-year">2024</p>
-          <img class="seasons__info-decor" src="/_assets/images/decor-tyretrack.svg" alt="">
-          <a class="seasons__info-button button" href="#">Telegram-чат</a>
-        </div>
-        <ul class="seasons__list">
-          <li class="seasons__list-item">
-            <p class="seasons__list-day text-stroke">16</p>
-            <p class="seasons__list-month">Мая</p>
-            <p class="seasons__list-name">Smolensk<br> ring</p>
-            <a class="seasons__list-button button" href="#">Подробнее</a>
-          </li>
-          <li class="seasons__list-item">
-            <p class="seasons__list-day text-stroke">8</p>
-            <p class="seasons__list-month">Июня</p>
-            <p class="seasons__list-name">Moscow<br> raceway</p>
-            <a class="seasons__list-button button" href="#">Подробнее</a>
-          </li>
-          <li class="seasons__list-item">
-            <p class="seasons__list-day text-stroke">30</p>
-            <p class="seasons__list-month">Июня</p>
-            <p class="seasons__list-name">Kazan<br> ring</p>
-            <a class="seasons__list-button button" href="#">Подробнее</a>
-          </li>
-          <li class="seasons__list-item is-current">
-            <p class="seasons__list-day text-stroke">10</p>
-            <p class="seasons__list-month">Июля</p>
-            <p class="seasons__list-name">Igora<br> drive</p>
-            <a class="seasons__list-button button" href="#">Подробнее</a>
-          </li>
-        </ul>
-      </div>
+      <div class="js-tabs">
 
-      <div class="stage" data-css-theme="winter">
-        <div class="stage__track">
-          <img class="stage__image" src="/_assets/images/tracks/track-1.png" alt="">
-          <span class="stage__config">Конфигурация: F1</span>
+        <div class="seasons" data-css-theme="winter">
+          <div class="seasons__info">
+            <h1 class="seasons__info-name">Сезон 18</h1>
+            <p class="seasons__info-year">2024</p>
+            <img class="seasons__info-decor" src="/_assets/images/decor-tyretrack.svg" alt="">
+            <a class="seasons__info-button button" href="#">Telegram-чат</a>
+          </div>
+          <ul class="seasons__list">
+            <li class="seasons__list-item js-tabs-trigger" data-tab-id="1">
+              <p class="seasons__list-day text-stroke">16</p>
+              <p class="seasons__list-month">Мая</p>
+              <p class="seasons__list-name">Smolensk<br> ring</p>
+              <a class="seasons__list-button button" href="#">Подробнее</a>
+            </li>
+            <li class="seasons__list-item js-tabs-trigger" data-tab-id="2">
+              <p class="seasons__list-day text-stroke">8</p>
+              <p class="seasons__list-month">Июня</p>
+              <p class="seasons__list-name">Moscow<br> raceway</p>
+              <a class="seasons__list-button button" href="#">Подробнее</a>
+            </li>
+            <li class="seasons__list-item js-tabs-trigger" data-tab-id="3">
+              <p class="seasons__list-day text-stroke">30</p>
+              <p class="seasons__list-month">Июня</p>
+              <p class="seasons__list-name">Kazan<br> ring</p>
+              <a class="seasons__list-button button" href="#">Подробнее</a>
+            </li>
+            <li class="seasons__list-item js-tabs-trigger" data-tab-id="4">
+              <p class="seasons__list-day text-stroke">10</p>
+              <p class="seasons__list-month">Июля</p>
+              <p class="seasons__list-name">Igora<br> drive</p>
+              <a class="seasons__list-button button" href="#">Подробнее</a>
+            </li>
+          </ul>
         </div>
-        <div class="stage__content">
-          <div class="stage__head">
-            <h2 class="stage__name">Igora drive</h2>
-            <p class="stage__data">10.06</p>
+
+        <div class="stage js-tabs-content" data-tab-id="1" data-css-theme="winter">
+          <div class="stage__track">
+            <img class="stage__image" src="/_assets/images/tracks/track-1.png" alt="">
+            <span class="stage__config">Конфигурация: F1</span>
           </div>
-          <div class="stage__body">
-            <p class="stage__address">Ленинградская область, Приозёрское ш., 3, корп. 5, д. Новожилово </p>
-            <ul class="stage__props">
-              <li class="stage__props-item">
-                <span class="stage__props-value">4 153</span>
-                <span class="stage__props-label">Длина трассы</span>
-              </li>
-              <li class="stage__props-item">
-                <span class="stage__props-value">26</span>
-                <span class="stage__props-label">Поворотов</span>
-              </li>
-              <li class="stage__props-item">
-                <span class="stage__props-value">01:56,555</span>
-                <span class="stage__props-label">Рекорд MPC Best Laps</span>
-              </li>
-            </ul>
+          <div class="stage__content">
+            <div class="stage__head">
+              <h2 class="stage__name">Smolensk ring</h2>
+              <p class="stage__data">16.05</p>
+            </div>
+            <div class="stage__body">
+              <p class="stage__address">Ленинградская область, Приозёрское ш., 3, корп. 5, д. Новожилово </p>
+              <ul class="stage__props">
+                <li class="stage__props-item">
+                  <span class="stage__props-value">4 153</span>
+                  <span class="stage__props-label">Длина трассы</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">26</span>
+                  <span class="stage__props-label">Поворотов</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">01:56,555</span>
+                  <span class="stage__props-label">Рекорд MPC Best Laps</span>
+                </li>
+              </ul>
+            </div>
+            <div class="stage__foot">
+              <a class="stage__button button button_green" href="#">Регистрация</a>
+              <a class="stage__button button button_white" href="/schedule">Расписание</a>
+              <a class="stage__button button button_white" href="/results/stage_name">Результаты</a>
+              <a class="stage__button button button_white" href="/media/album_name">Фотографии</a>
+            </div>
           </div>
-          <div class="stage__foot">
-            <a class="stage__button button button_green" href="#">Регистрация</a>
-            <a class="stage__button button button_white" href="#">Расписание</a>
-            <a class="stage__button button button_white" href="/results/stage_name">Результаты</a>
-            <a class="stage__button button button_white" href="/media/album_name">Фотографии</a>
+        </div>
+
+        <div class="stage js-tabs-content" data-tab-id="2" data-css-theme="winter">
+          <div class="stage__track">
+            <img class="stage__image" src="/_assets/images/tracks/track-1.png" alt="">
+            <span class="stage__config">Конфигурация: F1</span>
+          </div>
+          <div class="stage__content">
+            <div class="stage__head">
+              <h2 class="stage__name">Moscow raceway</h2>
+              <p class="stage__data">8.06</p>
+            </div>
+            <div class="stage__body">
+              <p class="stage__address">Ленинградская область, Приозёрское ш., 3, корп. 5, д. Новожилово </p>
+              <ul class="stage__props">
+                <li class="stage__props-item">
+                  <span class="stage__props-value">4 153</span>
+                  <span class="stage__props-label">Длина трассы</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">26</span>
+                  <span class="stage__props-label">Поворотов</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">01:56,555</span>
+                  <span class="stage__props-label">Рекорд MPC Best Laps</span>
+                </li>
+              </ul>
+            </div>
+            <div class="stage__foot">
+              <a class="stage__button button button_green" href="#">Регистрация</a>
+              <a class="stage__button button button_white" href="/schedule">Расписание</a>
+              <a class="stage__button button button_white" href="/results/stage_name">Результаты</a>
+              <a class="stage__button button button_white" href="/media/album_name">Фотографии</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage js-tabs-content" data-tab-id="3" data-css-theme="winter">
+          <div class="stage__track">
+            <img class="stage__image" src="/_assets/images/tracks/track-1.png" alt="">
+            <span class="stage__config">Конфигурация: F1</span>
+          </div>
+          <div class="stage__content">
+            <div class="stage__head">
+              <h2 class="stage__name">Kazan ring</h2>
+              <p class="stage__data">30.06</p>
+            </div>
+            <div class="stage__body">
+              <p class="stage__address">Ленинградская область, Приозёрское ш., 3, корп. 5, д. Новожилово </p>
+              <ul class="stage__props">
+                <li class="stage__props-item">
+                  <span class="stage__props-value">4 153</span>
+                  <span class="stage__props-label">Длина трассы</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">26</span>
+                  <span class="stage__props-label">Поворотов</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">01:56,555</span>
+                  <span class="stage__props-label">Рекорд MPC Best Laps</span>
+                </li>
+              </ul>
+            </div>
+            <div class="stage__foot">
+              <a class="stage__button button button_green" href="#">Регистрация</a>
+              <a class="stage__button button button_white" href="/schedule">Расписание</a>
+              <a class="stage__button button button_white" href="/results/stage_name">Результаты</a>
+              <a class="stage__button button button_white" href="/media/album_name">Фотографии</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage js-tabs-content" data-tab-id="4" data-css-theme="winter">
+          <div class="stage__track">
+            <img class="stage__image" src="/_assets/images/tracks/track-1.png" alt="">
+            <span class="stage__config">Конфигурация: F1</span>
+          </div>
+          <div class="stage__content">
+            <div class="stage__head">
+              <h2 class="stage__name">Igora drive</h2>
+              <p class="stage__data">10.07</p>
+            </div>
+            <div class="stage__body">
+              <p class="stage__address">Ленинградская область, Приозёрское ш., 3, корп. 5, д. Новожилово </p>
+              <ul class="stage__props">
+                <li class="stage__props-item">
+                  <span class="stage__props-value">4 153</span>
+                  <span class="stage__props-label">Длина трассы</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">26</span>
+                  <span class="stage__props-label">Поворотов</span>
+                </li>
+                <li class="stage__props-item">
+                  <span class="stage__props-value">01:56,555</span>
+                  <span class="stage__props-label">Рекорд MPC Best Laps</span>
+                </li>
+              </ul>
+            </div>
+            <div class="stage__foot">
+              <a class="stage__button button button_green" href="#">Регистрация</a>
+              <a class="stage__button button button_white" href="/schedule">Расписание</a>
+              <a class="stage__button button button_white" href="/results/stage_name">Результаты</a>
+              <a class="stage__button button button_white" href="/media/album_name">Фотографии</a>
+            </div>
           </div>
         </div>
       </div>
@@ -174,13 +285,14 @@
         </div>
         <div class="prize" id="block-prize">
           <h2 class="title">Классы и призовые</h2>
-          <div class="prize__body">
+          <div class="prize__body js-tabs">
             <div class="prize__buttons">
-              <button class="prize__button is-current">Полный привод (AWD)</button>
-              <button class="prize__button">Передний привод (FWD)</button>
-              <button class="prize__button">Задний привод (RWD)</button>
+              <button class="prize__button js-tabs-trigger" data-tab-id="1">Полный привод (AWD)</button>
+              <button class="prize__button js-tabs-trigger" data-tab-id="2">Передний привод (FWD)</button>
+              <button class="prize__button js-tabs-trigger" data-tab-id="3">Задний привод (RWD)</button>
             </div>
-            <div class="prize__content">
+            <!-- Полный привод (AWD) -->
+            <div class="prize__content js-tabs-content" data-tab-id="1">
               <div class="prize__cards">
                 <div class="card-prize">
                   <p class="card-prize__value">25 000 ₽</p>
@@ -201,6 +313,53 @@
               <p class="prize__text">
                 Призовой фонд остается одинаковым и вручается призерам классов на каждом мероприятии зимней серии MaxPowerIce. Награда вручается в виде сертификата и должна быть получена непосредственно участником соревнования. В случае
                 отсутствия победителя/призера на церемонии награждения, призовой фонд не выдается. При этом участник сохраняет право на получение сувенирной наградной атрибутики.
+              </p>
+            </div>
+            <!-- Передний привод (FWD) -->
+            <div class="prize__content js-tabs-content" data-tab-id="2">
+              <div class="prize__cards">
+                <div class="card-prize">
+                  <p class="card-prize__value">125 000 ₽</p>
+                  <hr class="card-prize__divider">
+                  <p class="card-prize__label">за 1-ое место</p>
+                </div>
+                <div class="card-prize">
+                  <p class="card-prize__value">50 000 ₽</p>
+                  <hr class="card-prize__divider">
+                  <p class="card-prize__label">за 2-ое место</p>
+                </div>
+                <div class="card-prize">
+                  <p class="card-prize__value">25 000 ₽</p>
+                  <hr class="card-prize__divider">
+                  <p class="card-prize__label">за 3-е место</p>
+                </div>
+              </div>
+              <p class="prize__text">
+                Призовой фонд остается одинаковым и вручается призерам классов на каждом мероприятии зимней серии MaxPowerIce. Награда вручается в виде сертификата и должна быть получена непосредственно участником соревнования. В случае
+                отсутствия победителя/призера на церемонии награждения, призовой фонд не выдается.
+              </p>
+            </div>
+            <!-- Задний привод (RWD) -->
+            <div class="prize__content js-tabs-content" data-tab-id="3">
+              <div class="prize__cards">
+                <div class="card-prize">
+                  <p class="card-prize__value">15 000 ₽</p>
+                  <hr class="card-prize__divider">
+                  <p class="card-prize__label">за 1-ое место</p>
+                </div>
+                <div class="card-prize">
+                  <p class="card-prize__value">5 000 ₽</p>
+                  <hr class="card-prize__divider">
+                  <p class="card-prize__label">за 2-ое место</p>
+                </div>
+                <div class="card-prize">
+                  <p class="card-prize__value">2 500 ₽</p>
+                  <hr class="card-prize__divider">
+                  <p class="card-prize__label">за 3-е место</p>
+                </div>
+              </div>
+              <p class="prize__text">
+                Призовой фонд остается одинаковым и вручается призерам классов на каждом мероприятии зимней серии MaxPowerIce.
               </p>
             </div>
           </div>

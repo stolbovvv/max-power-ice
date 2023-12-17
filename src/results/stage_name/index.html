@@ -46,7 +46,7 @@
       <div class="header__banner">
         <img class="header__logo" src="/_assets/images/logo-max-power-ice.svg" alt="MaxPowerIse logo" title="MaxPowerIse">
         <div class="header__line"></div>
-        <button class="header__burger">
+        <button class="header__burger" id="js-menu-trigger">
           <span class="header__burger-text">Меню</span>
           <span class="header__burger-icon">
             <span></span>
@@ -90,337 +90,170 @@
             </div>
           </div>
           <div class="table__body">
-            <div class="table__body-row">
+            <div class="table__body-row" data-results-image="/results/stage_name/photos/result-img-1.jpg" data-results-roll-cage="Отсутствует">
               <div class="table__body-cell">
                 <div class="results-num">
-                  <p>1</p>
+                  <p data-results-num>1</p>
                 </div>
               </div>
               <div class="table__body-cell">
-                <div class="results-pilot">
+                <div class="results-pilot" data-results-pilot>
                   <p>Криворотченко Константин</p>
                   <p>Porsche 911 Carrera GTS 991.2</p>
                 </div>
               </div>
               <div class="table__body-cell">
                 <div class="results-model">
-                  <p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
-                  <p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
+                  <p data-result-front-axle>Michelin PS Cup2 N0 <span>255/35/20</span></p>
+                  <p data-result-back-axle>Michelin PS Cup2 N0 <span>315/30/20</span></p>
                 </div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
+                <div class="results-time bg-blue text-color-white" data-results-time-su-1>01:55,943</div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
+                <div class="results-time bg-blue text-color-white" data-results-time-su-2>01:55,943</div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-green text-color-white">01:55,943</div>
+                <div class="results-time bg-green text-color-white" data-results-time-su-3>01:55,943</div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-gray  text-color-white">01:55,943</div>
+                <div class="results-time bg-gray text-color-white" data-results-time-total>01:55,943</div>
               </div>
               <div class="table__body-cell">
                 <div class="results-point">Очки: 25</div>
               </div>
               <div class="table__body-cell">
-                <button class="results-button">Подробнее</button>
+                <button class="results-button js-popup-trigger" data-show-popup="modal-results">Подробнее</button>
               </div>
             </div>
-            <div class="table__body-row">
+            <div class="table__body-row" data-results-image="/results/stage_name/photos/result-img-2.jpg" data-results-roll-cage="Присутствует">
               <div class="table__body-cell">
                 <div class="results-num">
-                  <p>2</p>
+                  <p data-results-num>2</p>
                 </div>
               </div>
               <div class="table__body-cell">
-                <div class="results-pilot">
-                  <p>Криворотченко Константин</p>
-                  <p>Porsche 911 Carrera GTS 991.2</p>
+                <div class="results-pilot" data-results-pilot>
+                  <p>Гуревич Владимир</p>
+                  <p>Porsche 911 GT3 991.2</p>
                 </div>
               </div>
               <div class="table__body-cell">
                 <div class="results-model">
-                  <p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
-                  <p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
+                  <p data-result-front-axle>Nankang Sportnex AR-1 <span>255/35/20</span></p>
+                  <p data-result-back-axle>Nankang Sportnex AR-1 <span>315/30/20</span></p>
                 </div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
+                <div class="results-time bg-blue text-color-white" data-results-time-su-1>01:56,101</div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
+                <div class="results-time bg-blue text-color-white" data-results-time-su-2>01:56,101</div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-green text-color-white">01:55,943</div>
+                <div class="results-time bg-green text-color-white" data-results-time-su-3>01:56,101</div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-gray  text-color-white">01:55,943</div>
+                <div class="results-time bg-gray text-color-white" data-results-time-total>01:56,101</div>
               </div>
               <div class="table__body-cell">
                 <div class="results-point">Очки: 25</div>
               </div>
               <div class="table__body-cell">
-                <button class="results-button">Подробнее</button>
+                <button class="results-button js-popup-trigger" data-show-popup="modal-results">Подробнее</button>
               </div>
             </div>
-            <div class="table__body-row">
+          </div>
+        </div>
+        <div class="table">
+          <h2 class="subtitle">Передний привод (fwd)</h2>
+          <div class="table__head">
+            <div class="table__head-row">
+              <span class="table__head-cell">Место</span>
+              <span class="table__head-cell">Пилот, марка и модель автомобиля</span>
+              <span class="table__head-cell">Марка, модель и размерность шин</span>
+              <span class="table__head-cell">Время СУ-1</span>
+              <span class="table__head-cell">Время СУ-2</span>
+              <span class="table__head-cell">Время СУ-3</span>
+              <span class="table__head-cell">Общее время</span>
+              <span class="table__head-cell">Очки</span>
+              <span class="table__head-cell">Доп. информация</span>
+            </div>
+          </div>
+          <div class="table__body">
+            <div class="table__body-row" data-results-image="/results/stage_name/photos/result-img-1.jpg" data-results-roll-cage="Отсутствует">
               <div class="table__body-cell">
                 <div class="results-num">
-                  <p>3</p>
+                  <p data-results-num>1</p>
                 </div>
               </div>
               <div class="table__body-cell">
-                <div class="results-pilot">
+                <div class="results-pilot" data-results-pilot>
                   <p>Криворотченко Константин</p>
                   <p>Porsche 911 Carrera GTS 991.2</p>
                 </div>
               </div>
               <div class="table__body-cell">
                 <div class="results-model">
-                  <p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
-                  <p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
+                  <p data-result-front-axle>Michelin PS Cup2 N0 <span>255/35/20</span></p>
+                  <p data-result-back-axle>Michelin PS Cup2 N0 <span>315/30/20</span></p>
                 </div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
+                <div class="results-time bg-blue text-color-white" data-results-time-su-1>01:55,943</div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
+                <div class="results-time bg-blue text-color-white" data-results-time-su-2>01:55,943</div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-green text-color-white">01:55,943</div>
+                <div class="results-time bg-green text-color-white" data-results-time-su-3>01:55,943</div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-gray  text-color-white">01:55,943</div>
+                <div class="results-time bg-gray text-color-white" data-results-time-total>01:55,943</div>
               </div>
               <div class="table__body-cell">
                 <div class="results-point">Очки: 25</div>
               </div>
               <div class="table__body-cell">
-                <button class="results-button">Подробнее</button>
+                <button class="results-button js-popup-trigger" data-show-popup="modal-results">Подробнее</button>
               </div>
             </div>
-            <div class="table__body-row">
+            <div class="table__body-row" data-results-image="/results/stage_name/photos/result-img-2.jpg" data-results-roll-cage="Присутствует">
               <div class="table__body-cell">
                 <div class="results-num">
-                  <p>4</p>
+                  <p data-results-num>2</p>
                 </div>
               </div>
               <div class="table__body-cell">
-                <div class="results-pilot">
-                  <p>Криворотченко Константин</p>
-                  <p>Porsche 911 Carrera GTS 991.2</p>
+                <div class="results-pilot" data-results-pilot>
+                  <p>Гуревич Владимир</p>
+                  <p>Porsche 911 GT3 991.2</p>
                 </div>
               </div>
               <div class="table__body-cell">
                 <div class="results-model">
-                  <p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
-                  <p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
+                  <p data-result-front-axle>Nankang Sportnex AR-1 <span>255/35/20</span></p>
+                  <p data-result-back-axle>Nankang Sportnex AR-1 <span>315/30/20</span></p>
                 </div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
+                <div class="results-time bg-blue text-color-white" data-results-time-su-1>01:56,101</div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
+                <div class="results-time bg-blue text-color-white" data-results-time-su-2>01:56,101</div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-green text-color-white">01:55,943</div>
+                <div class="results-time bg-green text-color-white" data-results-time-su-3>01:56,101</div>
               </div>
               <div class="table__body-cell">
-                <div class="results-time bg-gray  text-color-white">01:55,943</div>
+                <div class="results-time bg-gray text-color-white" data-results-time-total>01:56,101</div>
               </div>
               <div class="table__body-cell">
                 <div class="results-point">Очки: 25</div>
               </div>
               <div class="table__body-cell">
-                <button class="results-button">Подробнее</button>
-              </div>
-            </div>
-            <div class="table__body-row">
-              <div class="table__body-cell">
-                <div class="results-num">
-                  <p>5</p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-pilot">
-                  <p>Криворотченко Константин</p>
-                  <p>Porsche 911 Carrera GTS 991.2</p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-model">
-                  <p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
-                  <p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-green text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-gray  text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-point">Очки: 25</div>
-              </div>
-              <div class="table__body-cell">
-                <button class="results-button">Подробнее</button>
-              </div>
-            </div>
-            <div class="table__body-row">
-              <div class="table__body-cell">
-                <div class="results-num">
-                  <p>6</p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-pilot">
-                  <p>Криворотченко Константин</p>
-                  <p>Porsche 911 Carrera GTS 991.2</p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-model">
-                  <p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
-                  <p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-green text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-gray  text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-point">Очки: 25</div>
-              </div>
-              <div class="table__body-cell">
-                <button class="results-button">Подробнее</button>
-              </div>
-            </div>
-            <div class="table__body-row">
-              <div class="table__body-cell">
-                <div class="results-num">
-                  <p>7</p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-pilot">
-                  <p>Криворотченко Константин</p>
-                  <p>Porsche 911 Carrera GTS 991.2</p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-model">
-                  <p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
-                  <p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-green text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-gray  text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-point">Очки: 25</div>
-              </div>
-              <div class="table__body-cell">
-                <button class="results-button">Подробнее</button>
-              </div>
-            </div>
-            <div class="table__body-row">
-              <div class="table__body-cell">
-                <div class="results-num">
-                  <p>8</p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-pilot">
-                  <p>Криворотченко Константин</p>
-                  <p>Porsche 911 Carrera GTS 991.2</p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-model">
-                  <p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
-                  <p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-green text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-gray  text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-point">Очки: 25</div>
-              </div>
-              <div class="table__body-cell">
-                <button class="results-button">Подробнее</button>
-              </div>
-            </div>
-            <div class="table__body-row">
-              <div class="table__body-cell">
-                <div class="results-num">
-                  <p>9</p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-pilot">
-                  <p>Криворотченко Константин</p>
-                  <p>Porsche 911 Carrera GTS 991.2</p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-model">
-                  <p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
-                  <p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
-                </div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-blue text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-green text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-time bg-gray  text-color-white">01:55,943</div>
-              </div>
-              <div class="table__body-cell">
-                <div class="results-point">Очки: 25</div>
-              </div>
-              <div class="table__body-cell">
-                <button class="results-button">Подробнее</button>
+                <button class="results-button js-popup-trigger" data-show-popup="modal-results">Подробнее</button>
               </div>
             </div>
           </div>
@@ -469,6 +302,104 @@
         </ul>
       </div>
     </footer>
+  </div>
+
+  <div class="modal js-popup" id="modal-results">
+    <div class="modal__dialog">
+      <div class="modal__head">
+        <button class="modal__close js-popup-trigger" data-hide-popup="modal-results">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="modal__body">
+        <div class="modal__card">
+          <div class="modal__card-hand">
+            <div class="modal__card-image">
+              <img id="results-image" src="" alt="">
+            </div>
+            <div class="modal__card-pilot">
+              <div class="modal__card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                  <g clip-path="url(#clip0_31_13849)">
+                    <path
+                      d="M25.9279 8.66654C25.9214 8.63901 25.9125 8.6121 25.9013 8.58612C24.9273 6.09027 23.2395 3.94061 21.0511 2.40864C18.8149 0.83625 16.151 -0.00481531 13.4222 2.07386e-05C6.02062 2.07386e-05 0 6.1013 0 13.6009C0 15.5382 0.586624 16.9493 1.75426 19.7614C1.93249 20.1848 2.12616 20.6574 2.33387 21.1654C2.37166 21.2572 2.43031 21.3389 2.50513 21.4038C2.57995 21.4688 2.66885 21.5152 2.76471 21.5393C5.8059 22.3083 11.7311 23.8605 16.9588 25.2306C20.581 26.1802 23.7092 26.9986 25.0382 27.3372C25.0886 27.3507 25.1405 27.3573 25.1926 27.357C25.2962 27.357 25.3982 27.3312 25.4895 27.282C25.5809 27.2327 25.6587 27.1616 25.716 27.0748L25.9799 26.6854C26.8991 25.3364 28.1566 23.488 28.4064 21.1739C28.4064 21.1513 28.4064 21.1273 28.4064 21.1047C28.4092 19.1787 26.6184 11.4731 25.9279 8.66654ZM27.0759 20.2666L14.4972 16.9521L13.8109 15.3139C13.7745 15.2265 13.719 15.1484 13.6486 15.0854C13.5781 15.0224 13.4945 14.976 13.4039 14.9498C12.7593 14.7614 12.2038 14.3454 11.8397 13.7783C11.4755 13.2112 11.3271 12.5311 11.4216 11.8628C11.5162 11.1945 11.8474 10.5829 12.3543 10.1404C12.8613 9.6979 13.5101 9.45414 14.1814 9.4539H24.8193C25.6824 13.021 26.7896 18.0259 27.0759 20.2666ZM24.9371 25.9714L24.9203 25.9968C23.4215 25.6116 20.5515 24.8595 17.2773 24.0016C12.2251 22.6766 6.5062 21.1795 3.38361 20.3865C3.22082 19.9886 3.06644 19.6189 2.92189 19.2718C1.78233 16.533 1.26307 15.2828 1.26307 13.6009C1.26307 6.80117 6.71811 1.26994 13.4222 1.26994C15.7072 1.26569 17.9466 1.91302 19.8804 3.13682C21.8142 4.36062 23.3633 6.1107 24.3477 8.18397H14.1814C13.2323 8.18403 12.3134 8.51908 11.5849 9.13068C10.8564 9.74228 10.3645 10.5916 10.1951 11.5305C10.0257 12.4695 10.1895 13.4384 10.658 14.2683C11.1264 15.0982 11.8698 15.7364 12.7584 16.0716L13.4601 17.7338C13.4977 17.8232 13.5552 17.9028 13.6282 17.9664C13.7012 18.03 13.7877 18.076 13.8811 18.1007L27.0731 21.5774C26.7321 23.3313 25.7469 24.7833 24.9371 25.9714Z"
+                      fill="white" />
+                    <path
+                      d="M14.0535 3.45698C14.0535 3.28858 13.987 3.12708 13.8686 3.008C13.7501 2.88892 13.5895 2.82202 13.422 2.82202C7.5684 2.82202 2.80664 7.65761 2.80664 13.6009C2.80664 13.7693 2.87318 13.9308 2.99161 14.0498C3.11005 14.1689 3.27068 14.2358 3.43817 14.2358C3.60567 14.2358 3.7663 14.1689 3.88474 14.0498C4.00317 13.9308 4.06971 13.7693 4.06971 13.6009C4.06971 8.35748 8.26449 4.09195 13.422 4.09195C13.5895 4.09195 13.7501 4.02505 13.8686 3.90597C13.987 3.78689 14.0535 3.62539 14.0535 3.45698Z"
+                      fill="white" />
+                    <path
+                      d="M19.2127 11.3842C19.1442 11.3373 19.0671 11.3044 18.986 11.2875C18.9048 11.2706 18.8212 11.2701 18.7398 11.2858C18.6584 11.3015 18.5809 11.3333 18.5118 11.3792C18.4426 11.4252 18.3832 11.4844 18.3369 11.5536L16.3287 14.5421C16.2483 14.6816 16.2238 14.8466 16.26 15.0036C16.2962 15.1607 16.3904 15.298 16.5236 15.3877C16.6568 15.4775 16.8189 15.5129 16.9771 15.4869C17.1353 15.4609 17.2778 15.3754 17.3756 15.2476L19.3825 12.2591C19.4745 12.1202 19.5083 11.9504 19.4765 11.7866C19.4447 11.6228 19.3499 11.4782 19.2127 11.3842Z"
+                      fill="white" />
+                    <path
+                      d="M23.3585 11.3841C23.2899 11.3371 23.2127 11.3042 23.1315 11.2873C23.0502 11.2704 22.9664 11.2698 22.8849 11.2855C22.8034 11.3013 22.7258 11.333 22.6565 11.379C22.5873 11.425 22.5277 11.4843 22.4813 11.5534L19.805 15.5368C19.7586 15.6057 19.7261 15.6833 19.7095 15.7649C19.693 15.8465 19.6925 15.9306 19.7083 16.0124C19.7241 16.0942 19.7557 16.172 19.8015 16.2415C19.8472 16.311 19.9061 16.3707 19.9748 16.4172C20.0791 16.4886 20.2024 16.5265 20.3285 16.5259C20.4321 16.5257 20.5341 16.4999 20.6254 16.4507C20.7167 16.4015 20.7945 16.3304 20.852 16.2437L23.5283 12.2618C23.6212 12.1226 23.6554 11.9522 23.6236 11.7877C23.5918 11.6232 23.4964 11.4781 23.3585 11.3841Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_31_13849">
+                      <rect width="28.4092" height="27.357" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="results-pilot" id="results-pilot">
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="modal__data">
+          <li class="modal__data-item">
+            <span class="results-num text-color-white" id="results-num"></span>
+            <span class="table__head-cell">Место</span>
+          </li>
+          <li class="modal__data-item">
+            <span class="results-time bg-blue text-color-white" id="results-time-su-1"></span>
+            <span class="table__head-cell">Время СУ-1</span>
+          </li>
+          <li class="modal__data-item">
+            <span class="results-time bg-red text-color-white" id="results-time-su-2"></span>
+            <span class="table__head-cell">Время СУ-2</span>
+          </li>
+          <li class="modal__data-item">
+            <span class="results-time bg-gray text-color-white" id="results-time-su-3"></span>
+            <span class="table__head-cell">Время СУ-3</span>
+          </li>
+          <li class="modal__data-item">
+            <span class="results-time bg-green text-color-white" id="results-time-total"></span>
+            <span class="table__head-cell">Общее время</span>
+          </li>
+        </ul>
+        <ul class="modal__list">
+          <li class="modal__list-item">
+            <svg class="modal__list-item-icon" viewBox="0 0 24 24">
+              <use href="/_assets/icons/sprite.svg#icon-wheel"></use>
+            </svg>
+            <div class="modal__list-item-data">
+              <span>Передняя ось:</span>
+              <span id="result-front-axle"></span>
+            </div>
+          </li>
+          <li class="modal__list-item">
+            <svg class="modal__list-item-icon" viewBox="0 0 24 24">
+              <use href="/_assets/icons/sprite.svg#icon-wheel"></use>
+            </svg>
+            <div class="modal__list-item-data">
+              <span>Задняя ось:</span>
+              <span id="result-back-axle"></span>
+            </div>
+          </li>
+          <li class="modal__list-item">
+            <svg class="modal__list-item-icon" viewBox="0 0 24 24">
+              <use href="/_assets/icons/sprite.svg#icon-shield"></use>
+            </svg>
+            <div class="modal__list-item-data">
+              <span>Каркас безопасности:</span>
+              <span><strong id="results-roll-cage"></strong></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
 
