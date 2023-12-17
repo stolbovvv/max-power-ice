@@ -111,8 +111,7 @@ class Album {
     const album = this.albumRoot;
     const slider = this.sliderRoot;
 
-    // this.get(`${url}photo.php`)
-    this.get(`http://localhost:4321/src/media/album_name/photo.php`)
+    this.get(`${url}photo.php`)
       .then((data) => {
         data.forEach((img) => {
           if (this.albumRoot)
