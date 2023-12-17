@@ -6,6 +6,13 @@ class Menu {
     this.menuTrigger = document.querySelector('#js-menu-trigger');
 
     if (this.menuWrapper && this.menuTrigger) {
+      this.menuLinks = this.menuWrapper.querySelectorAll('.js-menu-link');
+
+      this.init = this.init.bind(this);
+      this.show = this.show.bind(this);
+      this.hide = this.hide.bind(this);
+      this.toggle = this.toggle.bind(this);
+
       this.init();
     }
   }
@@ -36,6 +43,8 @@ class Menu {
 
   init() {
     this.menuTrigger.addEventListener('click', () => this.toggle());
+
+    this.menuLinks.forEach((link) => link.addEventListener('click', this.hide));
   }
 }
 
