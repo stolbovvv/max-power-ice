@@ -139,6 +139,7 @@ body[data-css-theme="summer"] {
   border-radius: 0.5em;
   border: 1px solid transparent;
   transition: all var(--transition-ease-1);
+  cursor: pointer;
 }
 .button:is(:active) {
   transform: scale(0.9375);
